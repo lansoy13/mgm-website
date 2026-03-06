@@ -3,36 +3,139 @@
 }
 
 header{
-    height:10vh;
+    height:50vh;
     padding: 0 16px;
     margin:0;
-    background: linear-gradient(to right, #04efef,#77f584, #ddfc6f);
+    background: url(images/loml.jpg);
+    background-size: 75%;
+    background-position: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+    
+}
+
+
+h2{
+  margin-top: 40px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+}
+.layout {
+    display: flex;
 }
 header h1 {
-  margin: 0;
+  padding; 25 px;
 }
+
 
 body {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url(images/mgflowers.jpg);
+    background-position: center 40%;
+    background-size: 90%;
 }
 
-.hero {
-    height: 30vh;
-    background: linear-gradient(to right, #ff4fa3,#ffb6c1, #ff9acb);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.card {
+    height: 50vh;
+    border-radius: 20px ;
+    padding: 10px;
+    align-content: flex-start;
+    flex: 1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+    
 
 }
 
-.hero-container {
-    display:flex;
+.card-container {
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
+    padding:0 px;
+    margin: 0 px;
 
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+}
+.night-mode {
+    background: url(images/mgnight.jpg);
+    background-size: 20%;
+    background-position: center 100%;
+}
+.night-mode header {
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    background: url("images/flowers.jpg");
+    background-position: center 60%;
+    
+}
+
+.tab-container {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 2px solid #aaa;
+}
+
+.tab {
+  padding: 10px 25px;
+  background: transparent;   /* 👈 transparent */
+  margin-right: 50px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  color: white;              /* adjust if needed */
+  margin-top: 12px;
+   border-bottom: none;
+   width: 100%;
+}
+
+.tab.active {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  backdrop-filter: blur(5px);            /* optional glass effect */
+  font-weight: bold;
+  position: relative;
+  top: 1px;
+ 
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: none;                 /* optional */
+  background: transparent;      /* 👈 THIS */
+  color: white;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.text
+{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+    
+}
+
+video{
+  width: 300px;
+  padding: 20px;
+
+}
+
+.video-container{
+
+ 
+  display: flex;
+  height: 100vh;
+  margin:100px;
+  
+
+
+.video-container p{
+  max-width: 400px;
+  line-height: 1.6;
 }

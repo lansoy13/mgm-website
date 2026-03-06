@@ -2,27 +2,65 @@
 <html lang='es'>
 <head>
     <meta charset="utf-8">
-    <title> Dinosaurs </title>
+    <title> Make MGM Happy </title>
     <link rel ="stylesheet" href = "style.css">
 </head>
 
 
 <body>
+
 <header>
+
+<section class = "layout">
+    <div class ="card text">
     <h1> How to make Mary Grace happy? </h1>
-</header>
-<section class ="hero">
-
-
-    <h2> Her beauty, elegance and grace are nowhere near those of other beings. </h2>
-    <p> The only guide you need to make MGM happy. </p>
-    
-    <div class="hero-container">
-        <button> Uncover the secrets now! </button>
-        <button> Recall the blissful memories. </button>
+    <button id="nightmode_button"> Toggle night-mode.</button>
+        <div class="tab-container">
+    <div class="tab active" data-tab="home">Home</div>
+    <div class="tab" data-tab="about">About</div>
+    <div class="tab" data-tab="contact">Contact</div>
+    </div>
     </div>
 
+
+<div class ="card text">
+    <h2> Her beauty, elegance and grace are nowhere near those of other beings. </h2>
+    <p> The only guide you need to make MGM happy. </p>
+
+    <div class="card-container">
+        <button id="secret_button"> Uncover the secrets now! </button>
+        <button id="recall_button"> Captured blinding smiles. </button>
+    </div>
 </section>
+</section>
+</header>
+
+<div class="tab-content active" id="home">
+  <h2> This is the page you are looking for if you want to make MGM the happiest woman on earth. </h2>
+
+<div class="video-container">
+  <video controls autoplay muted loop>
+    <source src="videos/VID_20250423_184138.mp4" type="video/mp4">
+  </video>
+
+<p class="text">This is Mary Grace Y. Manlunas. <br>
+    She is the most precious gem that radiates positivity and charm. <br>
+    She is an empath that gives love to virtually every being. <br>
+    Her presence induces calmness which makes your worries vanish into thin air. <br></p>
+</div>
+
+</div>
+
+<div class="tab-content" id="about">
+  <h2>About Us ✨</h2>
+  <p>This is the about section content.</p>
+</div>
+
+<div class="tab-content" id="contact">
+  <h2>Contact 📩</h2>
+  <p>This is the contact section content.</p>
+</div>
+  
 
 <script src="script.js"> </script>
 </body>
